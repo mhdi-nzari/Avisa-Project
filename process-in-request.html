@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./plugin/css/all.min.css" />
+    <title>درخواست های درحال پردازش - آزمایشگاه آویسا</title>
+    <link rel="icon" href="./img/logo.png" />
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md navbar-light">
+
+        <button class="navbar-toggler mr-auto mb-2 bg-light" type="button" data-toggle="collapse"
+            data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-md-3 col-lg-3 col-xl-2 sidebar shadow-lg fixed-top">
+
+                        <a href="#"
+                            class="navbar-brand font-weight-bold text-white d-block mx-auto text-center py-3 mb-4 border-bottom">
+                            آزمایشگاه آویسا</a>
+
+                        <div class="border-bottom pb-3">
+                            <img src="./img/avatar.jpg" class="rounded-circle mr-3" width="60" alt="">
+                            <a href="#" class="text-white mr-3"> علی توفیقی </a>
+                        </div>
+
+                        <ul class="navbar-nav flex-column mt-5 p-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-right text-white sidebar-link p-2 mb-2 font-1"
+                                    href="index.html">
+                                    <i class="fas fa-home text-light fa-lg ml-3"></i> داشبورد مدیریت
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-right text-white sidebar-link p-2 mb-2 font-1" href="#">
+                                    <i class="fas fa-user text-light fa-lg ml-3"></i>
+                                    پروفایل
+                                </a>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2  "
+                                    href="new-request.html"><i class="fas fa-file-alt text-light fa-lg ml-3 font-1"></i>
+                                    درخواسته های جدید</a></li>
+
+                            <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2 current"
+                                    href="process-in-request.html"><i
+                                        class="fas fa-vials text-light fa-lg ml-3 font-1"></i>
+                                    درخواست در حال بررسی </a></li>
+
+                            <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2 "
+                                    href="archive-request.html"><i
+                                        class="fas fa-envelope text-light fa-lg ml-3 font-1"></i>
+                                    آرشیو درخواست ها</a></li>
+
+                            <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2"
+                                    href="./send-request.html"><i
+                                        class="fas fa-cloud-upload-alt text-light fa-lg ml-3 font-1"></i> ارسال پاسخ
+                                </a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-9 col-lg-9 col-xl-10 top-navbar mr-auto bg-dark fixed-top py-2">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-4">
+
+                                <h4 class="text-white mb-0"> داشبورد </h4>
+
+                            </div>
+
+                            <div class="col-md-5 d-none  d-lg-block">
+
+                                <form action="#">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input" placeholder="جستجو ...">
+                                        <button class="btn text-white  search-button" type="button"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <ul class="navbar-nav">
+
+                                    <li class="navbar-item icon-parent">
+                                        <a href="#" class="nav-link icon-bullet text-left">
+                                            <i class="fas fa-comments text-white fa-lg"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="navbar-item icon-parent">
+                                        <a href="#" class="nav-link icon-bullet text-left"><i
+                                                class="fas fa-bell text-white fa-lg"></i></a>
+                                    </li>
+
+                                    <li class="navbar-item mr-auto">
+                                        <a class="nav-link" href=" http://google.com " target=" _blank ">
+                                            <i class="fas fa-sign-out-alt text-danger fa-lg "></i>
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="section ">
+
+        <div class="container-fluid ">
+
+            <div class="row ">
+
+                <div class="col-xl-10 col-lg-9 col-md-9 mr-auto ">
+                    <div class="row titleCms">
+                        <h3 class="bg-danger text-white pr-5 pl-5 p-2 rounded">درخواست ها</h3>
+                        <div class="border-bottom col-12"></div>
+                    </div>
+                    <div class="row pt-md-2 mb-md-2 ">
+
+                        <div class="col-sm-6 col-lg-4 p-2 ">
+
+                            <div class="card shadow ">
+
+                                <div class="card-body alert-info">
+
+                                    <div class="d-flex justify-content-between ">
+
+                                        <div class="text-muted statusCms">
+                                            <span class="counter1 bnazanin num">20 </span>
+                                            <span>درخواست های جدید</span>
+                                        </div>
+
+                                        <i class="fas fa-question-circle fa-3x text-info "></i>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="card-footer bg-info">
+                                    <i class="fas fa-sync fa-spin mt-2 "></i>
+                                    <button class="btn bg-white float-left ">آپدیت</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 p-2 ">
+
+                            <div class="card shadow ">
+
+                                <div class="card-body alert-warning">
+
+                                    <div class="d-flex justify-content-between ">
+
+                                        <div class="text-muted statusCms">
+                                            <span class=" bnazanin num" id="counter3">70 </span>
+                                            <span>درخواست های درحال بررسی</span>
+                                        </div>
+                                        <i class="fas fa-clipboard-list fa-3x text-warning "></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="card-footer bg-warning">
+                                    <i class="fas fa-sync fa-spin mt-2 "></i>
+                                    <button class="btn bg-white float-left ">آپدیت</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 p-2 ">
+
+                            <div class="card shadow ">
+
+                                <div class="card-body alert-success">
+
+                                    <div class="d-flex justify-content-between ">
+                                        <div class="text-muted statusCms">
+                                            <span class="bnazanin num"> 2000 </span>
+                                            <span> مجموع درخواست ها </span>
+                                        </div>
+                                        <i class="fas fa-pencil-alt fa-3x text-success "></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="card-footer bg-success">
+                                    <i class="fas fa-sync fa-spin mt-2 "></i>
+                                    <button class="btn bg-white float-left ">آپدیت</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row titleCms2">
+                        <h3 class="bg-danger text-white pr-5 pl-5 p-2 rounded">کاربران</h3>
+                        <div class="border-bottom col-12"></div>
+                    </div>
+                    <div class="row pt-md-2 mb-md-2 ">
+                        <div class="col-sm-6 col-lg-4 p-2 ">
+
+                            <div class="card shadow ">
+
+                                <div class="card-body alert-success">
+
+                                    <div class="d-flex justify-content-between ">
+
+                                        <div class="text-muted statusCms">
+                                            <span class="bnazanin num" id="counter2">40 </span>
+                                            <span>کاربران</span>
+                                        </div>
+                                        <i class="fas fa-users fa-3x text-success "></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="card-footer bg-success">
+                                    <i class="fas fa-sync fa-spin mt-2 "></i>
+                                    <button class="btn bg-white float-left ">آپدیت</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section ">
+
+        <div class="container-fluid ">
+
+            <div class="row ">
+
+                <div class="col-xl-10 col-lg-9 col-md-9 mr-auto ">
+
+                    <div class="row ">
+
+                        <div class="col-12 tableParent">
+
+                            <h4 class="text-center text-muted font-weight-bold mb-3 "> درخواست های درحال بررسی </h4>
+
+                            <table class="table bg-light text-center table-bordered table-striped ">
+
+                                <thead class="thead-dark ">
+                                    <tr>
+                                        <th>تعداد</th>
+                                        <th> نام </th>
+                                        <th> کد </th>
+                                        <th> تلفن </th>
+                                        <th> تعیین وضعیت درخواست </th>
+                                        <th>درخواست</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="cmsTable">
+                                    <tr>
+                                        <td>1</td>
+                                        <td> علی شیخ </td>
+                                        <td> 99-55-6667 </td>
+                                        <td> 0913-652-3256 </td>
+                                        <td>
+
+                                            <a href="# " class="btn btn-outline-success "> درحال بررسی <i
+                                                    class="fas fa-cog fa-spin"></i></a>
+                                            <a href="# " class="btn btn-outline-danger "> انصراف بررسی <i
+                                                    class="fas fa-window-close"></i></a>
+
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-info text-center ">دانلود<i
+                                                    class="fas fa-cloud-download-alt pr-2"></i>
+                                            </a>
+                                            <a href="# " class="btn btn-outline-info btn-pay"> جزئیات <i
+                                                    class="fas fa-scroll"></i></a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td> صادق حاجیگی </td>
+                                        <td> 99-88-1434 </td>
+                                        <td> 031-36-565</td>
+                                        <td>
+                                            <a href="# " class="btn btn-outline-success "> درحال بررسی <i
+                                                    class="fas fa-cog fa-spin"></i></a>
+                                            <a href="# " class="btn btn-outline-danger "> انصراف بررسی <i
+                                                    class="fas fa-window-close"></i></a>
+
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-info text-center ">دانلود<i
+                                                    class="fas fa-cloud-download-alt pr-2"></i>
+                                            </a>
+                                            <a href="# " class="btn btn-outline-info btn-pay"> جزئیات <i
+                                                    class="fas fa-scroll"></i></a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td> سالار مظفری </td>
+                                        <td> 55-66-999 </td>
+                                        <td> 0913-565-5456</td>
+                                        <td>
+                                            <a href="# " class="btn btn-outline-success "> درحال بررسی <i
+                                                    class="fas fa-cog fa-spin"></i></a>
+                                            <a href="# " class="btn btn-outline-danger "> انصراف بررسی <i
+                                                    class="fas fa-window-close"></i></a>
+
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-info text-center ">دانلود<i
+                                                    class="fas fa-cloud-download-alt pr-2"></i>
+                                            </a>
+                                            <a href="# " class="btn btn-outline-info btn-pay"> جزئیات <i
+                                                    class="fas fa-scroll"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td> ارشیا بهادری </td>
+                                        <td> 55-77-888 </td>
+                                        <td> 0913-523-4565 </td>
+                                        <td>
+                                            <a href="# " class="btn btn-outline-success "> درحال بررسی <i
+                                                    class="fas fa-cog fa-spin"></i></a>
+                                            <a href="# " class="btn btn-outline-danger "> انصراف بررسی <i
+                                                    class="fas fa-window-close"></i></a>
+
+
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-info text-center ">دانلود<i
+                                                    class="fas fa-cloud-download-alt pr-2"></i>
+                                            </a>
+                                            <a href="# " class="btn btn-outline-info btn-pay"> جزئیات <i
+                                                    class="fas fa-scroll"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td> محمد محمدی </td>
+                                        <td> 66-22-123 </td>
+                                        <td> 0913-555-4563 </td>
+                                        <td>
+                                            <a href="# " class="btn btn-outline-success "> درحال بررسی <i
+                                                    class="fas fa-cog fa-spin"></i></a>
+                                            <a href="# " class="btn btn-outline-danger "> انصراف بررسی <i
+                                                    class="fas fa-window-close"></i></a>
+
+
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-info text-center ">دانلود<i
+                                                    class="fas fa-cloud-download-alt pr-2"></i>
+                                            </a>
+                                            <a href="# " class="btn btn-outline-info btn-pay"> جزئیات <i
+                                                    class="fas fa-scroll"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td> حسین میرزایی </td>
+                                        <td> 56-12-3256 </td>
+                                        <td>0913-562-6325 </td>
+                                        <td>
+                                            <a href="# " class="btn btn-outline-success "> درحال بررسی <i
+                                                    class="fas fa-cog fa-spin"></i></a>
+                                            <a href="# " class="btn btn-outline-danger "> انصراف بررسی <i
+                                                    class="fas fa-window-close"></i></a>
+
+
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-info text-center ">دانلود<i
+                                                    class="fas fa-cloud-download-alt pr-2"></i>
+                                            </a>
+                                            <a href="# " class="btn btn-outline-info btn-pay"> جزئیات <i
+                                                    class="fas fa-scroll"></i></a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="col-12">
+                            <nav>
+                                <ul class="pagination justify-content-center ">
+
+                                    <li class="page-item ">
+                                        <a class="page-link py-2 px-3 " href="# ">
+                                            <span>&laquo;</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item active ">
+                                        <a class="page-link py-2 px-3 active " href="# ">
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <a class="page-link py-2 px-3 " href="# ">
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item ">
+                                        <a class="page-link py-2 px-3 " href="# ">
+                                            <span>3</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a class="page-link py-2 px-3 " href="# ">
+                                            <span>4</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a class="page-link py-2 px-3 " href="# ">
+                                            <span>5</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a class="page-link py-2 px-3 " href="# ">
+                                            <span>6</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a class="page-link py-2 px-3 " href="# ">
+                                            <span>&raquo;</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <div class="loader">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-xl-10 col-lg-9 col-md-9 mr-auto">
+
+                    <div class="d-flex justify-content-center" style="margin-top: 150px">
+                        <div class="spinner-grow" style="width: 5rem; height: 5rem;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src=" ./js/jquery-3.3.1.min.js"> </script>
+    <script src="./js/bootstrap.min.js">
+    </script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./plugin/js/all.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+        $('.section').hide();
+
+        setTimeout(function () {
+
+            $('.section').fadeIn();
+
+            $('.loader').fadeOut();
+
+            $(document).ready(function () {
+                $('[data-toggle="tooltip "]').tooltip();
+            });
+
+        }, 4000)
+    </script>
+
+
+    <script>
+        $('#counter1 , #counter2 , #counter3, #counter4').each(function () {
+            var $this = $(this);
+            jQuery({
+                Counter: 0
+            }).animate({
+                Counter: $this.text()
+            }, {
+                duration: 3000,
+                easing: 'swing',
+                step: function () {
+                    $this.text(Math.ceil(this.Counter));
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
