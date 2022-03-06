@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="29" viewBox="0 0 30 29">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_11_Pro_1">
+      <rect width="30" height="29"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_11_Pro_1" data-name="iPhone X, XS, 11 Pro – 1" clip-path="url(#clip-iPhone_X_XS_11_Pro_1)">
+    <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M27.959,14.261a13.7,13.7,0,1,1-13.7-13.7A13.7,13.7,0,0,1,27.959,14.261ZM12.676,21.514,22.839,11.351a.884.884,0,0,0,0-1.25l-1.25-1.25a.884.884,0,0,0-1.25,0l-8.288,8.288-3.87-3.87a.884.884,0,0,0-1.25,0l-1.25,1.25a.884.884,0,0,0,0,1.25l5.744,5.744a.884.884,0,0,0,1.25,0Z" transform="translate(0.438 0.438)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>پنل کاربری</title>
+  <link rel="stylesheet" href="./library/BootStrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="./library/BootStrap/bootstrap-rtl.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./fonts/IRANSans4/font.css" />
+
+  <!-- Bootstrap core CSS -->
+</head>
+
+<body style="font-family: IRANSans">
+  <!-- header 1 -->
+  <header class="header-1 position-fixed d-flex align-items-center justify-content-between">
+    <!-- logo -->
+    <div class="logo-div pl-3 order-1">
+      <img src="./img/logo.png" alt="logo..." class="w-65 float-left" />
+    </div>
+
+    <!-- right items -->
+    <div class="right-items pr-3 pb-1 d-flex align-items-center justify-content-between">
+      <img src="./img/menu.svg" alt="hamberger menu..." class="w-50 mw-50 menu-icon" />
+
+      <div class="notification position-relative">
+        <img src="./img/notification.svg" alt="notification..." class="mw-76 w-76" />
+        <div class="number position-absolute medium">3</div>
+        <div class="position-absolute noti-collapse collapse show text-justify" id="collapse1">
+          <div class="noti-item border-noti">
+            در اینجا متن نوتیفیکشن قرار خواهد گرفت.
+          </div>
+          <div class="noti-item border-noti">
+            در اینجا متن نوتیفیکشن قرار خواهد گرفت.
+          </div>
+          <div class="noti-item">در اینجا متن نوتیفیکشن قرار خواهد گرفت.</div>
+          <!-- end collapse div -->
+        </div>
+        <!-- end notification div -->
+      </div>
+    </div>
+    <!-- end header-1 -->
+  </header>
+
+  <!-- all content and sidebar -->
+  <div class="container-fluid mb-5">
+    <div class="row">
+      <!-- sidebar profile -->
+      <section class="sidebar position-fixed col-12 col-sm-12 col-md-3 col-lg-2 h-100">
+        <div class="profile">
+          <img src="./img/user.svg" alt="user profile..." class="user-profile" />
+          <p class="h6 color-black">علی محمدی</p>
+          <div class="icons d-flex justify-content-center align-items-center">
+            <div class="home-div">
+              <img src="./img/home.svg" alt="home ..." class="home-icon" />
+            </div>
+            <div class="exit-div">
+              <img src="./img/exit.svg" alt="exit ..." class="exit-icon" />
+            </div>
+          </div>
+          <!-- end profile -->
+        </div>
+
+        <div class="options mt-4 mx-2">
+          <div class="dashboard border-noti" data-toggle="collapse" data-target="#collapse2">
+            <div class="w-100 d-flex align-items-start justify-content-between">
+              <div class="d-flex align-items-start w-100">
+                <img src="./img/dashboard.svg" alt="dashboard icon..." class="icon-sidebar" />
+                <a href="./index.html" class="text-icon">داشبورد</a>
+              </div>
+
+              <img src="./img/left-arrows.svg" alt="arrow..." class="arrow-icon" />
+            </div>
+
+            <div id="collapse2" class="collapse mr-1">
+              <div class="d-flex align-items-start">
+                <img src="./img/user-setting.svg" alt="user setting..." class="user-setting-icon" />
+                <a href="./profile.html" class="text-icon-collapse">پروفایل کاربری</a>
+              </div>
+            </div>
+            <!-- end dashboard -->
+          </div>
+
+          <div class="requests border-noti active" data-toggle="collapse" data-target="#collapse3">
+            <div class="w-100 d-flex align-items-start justify-content-between">
+              <div class="d-flex align-items-start w-100">
+                <img src="./img/send.svg" alt="dashboard icon..." class="icon-sidebar" />
+                <a class="text-icon">درخواست ها</a>
+              </div>
+
+              <img src="./img/left-arrows.svg" alt="arrow..." class="arrow-icon" />
+            </div>
+
+            <div id="collapse3" class="collapse mr-1">
+              <div class="d-flex align-items-start flex-column">
+                <div class="w-100 d-flex align-items-start">
+                  <img src="./img/arrow.svg" alt="arrow..." class="arrow-collapse" />
+                  <a href="./index2.html" class="text-icon-collapse page2">افزودن درخواست</a>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- end dashboard -->
+          </div>
+          <!-- end options -->
+        </div>
+        <!-- end sidebar -->
+      </section>
+
+      <!-- content box -->
+      <section class="content col-12 col-md-9 col-lg-10 mr-auto p-3 text-center">
+        <button class="btn btn-primary px-4 py-2 mt-5 text-center">
+          پرداخت صورتحساب نهایی
+        </button>
+        <div class="mt-3 bg-white p-3 content-form">
+          <!-- header form -->
+          <header class="header-items pb-0 px-4 m-0 medium">
+            <div class="row">
+              <p class="col-12 col-sm-6 text-center bold title-header color-black">
+                جزئیات صورتحساب
+              </p>
+              <p class="col-3 text-center bold title-header color-black d-none d-sm-block">
+                انتخاب
+              </p>
+              <p class="col-3 text-center bold title-header color-black d-none d-sm-block">
+                نوع آزمایش
+              </p>
+            </div>
+          </header>
+
+          <!-- content form -->
+          <div class="all-content mt-3 px-4 pt-4 pb-2 position-relative">
+            <img src="./img/left-arrows.svg" alt="arrow collapse" class="transform-90 collapse-arrow-form"
+              data-toggle="collapse" data-target="#collapse-form" width="13px" height="13px" />
+            <div class="collapse show" id="collapse-form">
+              <div class="row text-center">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0 font-m-resposive">
+                  <div class="name-user pb-1 mb-3">
+                    <span class="medium color-black">نام و نام خانوادگی:</span>
+                    <span class="text-muted">علی محمدی</span>
+                  </div>
+
+                  <div class="cod-user pb-1 mb-3">
+                    <span class="medium color-black">نوع کود:</span>
+                    <span class="text-muted">کود آزمایشی</span>
+                  </div>
+
+                  <div class="code-user pb-1 mb-3">
+                    <span class="medium color-black">کد محصول:</span>
+                    <span class="text-muted bnazanin">1234567890</span>
+                  </div>
+
+                  <div class="price-user pb-1 mb-3">
+                    <span class="medium color-black">مبلغ کل:</span>
+                    <span class="text-muted bnazanin">‎‎3, 756, 235 <span class="small">تومان</span></span>
+                  </div>
+                  <!-- end user-options -->
+                </div>
+
+                <div class="col-6 col-sm-3">
+                  <div class="EC1-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="PT-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="FB-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="EC2-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="EC3-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-3 ltr">
+                  <div class="EC1-box mb-3">EC+</div>
+                  <div class="PT-box mb-3">PT+</div>
+                  <div class="FB-box mb-3">FB+</div>
+                  <div class="EC2-box mb-3">EC+</div>
+                  <div class="EC3-box mb-3">EC+</div>
+                  <!-- end select user -->
+                </div>
+
+                <!-- end row div -->
+              </div>
+            </div>
+            <!-- end content form -->
+          </div>
+
+          <!-- content form -->
+          <div class="all-content mt-3 px-4 pt-4 pb-2 position-relative">
+            <img src="./img/left-arrows.svg" alt="arrow collapse" class="collapse-arrow-form" data-toggle="collapse"
+              data-target="#collapse-form2" width="13px" height="13px" />
+            <div class="collapse" id="collapse-form2">
+              <div class="row text-center">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0 font-m-resposive">
+                  <div class="name-user pb-1 mb-3">
+                    <span class="medium color-black">نام و نام خانوادگی:</span>
+                    <span class="text-muted">علی محمدی</span>
+                  </div>
+
+                  <div class="cod-user pb-1 mb-3">
+                    <span class="medium color-black">نوع کود:</span>
+                    <span class="text-muted">کود آزمایشی</span>
+                  </div>
+
+                  <div class="code-user pb-1 mb-3">
+                    <span class="medium color-black">کد محصول:</span>
+                    <span class="text-muted bnazanin">1234567890</span>
+                  </div>
+
+                  <div class="price-user pb-1 mb-3">
+                    <span class="medium color-black">مبلغ کل:</span>
+                    <span class="text-muted bnazanin">‎‎3, 756, 235 <span class="small">تومان</span></span>
+                  </div>
+                  <!-- end user-options -->
+                </div>
+
+                <div class="col-6 col-sm-3">
+                  <div class="EC1-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="PT-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="FB-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="EC2-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="EC3-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-3 ltr">
+                  <div class="EC1-box mb-3">EC+</div>
+                  <div class="PT-box mb-3">PT+</div>
+                  <div class="FB-box mb-3">FB+</div>
+                  <div class="EC2-box mb-3">EC+</div>
+                  <div class="EC3-box mb-3">EC+</div>
+                  <!-- end select user -->
+                </div>
+
+                <!-- end row div -->
+              </div>
+            </div>
+            <!-- end content form -->
+          </div>
+
+          <!-- content form -->
+          <div class="all-content mt-3 px-4 pt-4 pb-2 position-relative">
+            <img src="./img/left-arrows.svg" alt="arrow collapse" class="collapse-arrow-form" data-toggle="collapse"
+              data-target="#collapse-form3" width="13px" height="13px" />
+            <div class="collapse" id="collapse-form3">
+              <div class="row text-center">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0 font-m-resposive">
+                  <div class="name-user pb-1 mb-3">
+                    <span class="medium color-black">نام و نام خانوادگی:</span>
+                    <span class="text-muted">علی محمدی</span>
+                  </div>
+
+                  <div class="cod-user pb-1 mb-3">
+                    <span class="medium color-black">نوع کود:</span>
+                    <span class="text-muted">کود آزمایشی</span>
+                  </div>
+
+                  <div class="code-user pb-1 mb-3">
+                    <span class="medium color-black">کد محصول:</span>
+                    <span class="text-muted bnazanin">1234567890</span>
+                  </div>
+
+                  <div class="price-user pb-1 mb-3">
+                    <span class="medium color-black">مبلغ کل:</span>
+                    <span class="text-muted bnazanin">‎‎3, 756, 235 <span class="small">تومان</span></span>
+                  </div>
+                  <!-- end user-options -->
+                </div>
+
+                <div class="col-6 col-sm-3">
+                  <div class="EC1-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="PT-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="FB-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="EC2-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="EC3-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-3 ltr">
+                  <div class="EC1-box mb-3">EC+</div>
+                  <div class="PT-box mb-3">PT+</div>
+                  <div class="FB-box mb-3">FB+</div>
+                  <div class="EC2-box mb-3">EC+</div>
+                  <div class="EC3-box mb-3">EC+</div>
+                  <!-- end select user -->
+                </div>
+
+                <!-- end row div -->
+              </div>
+            </div>
+            <!-- end content form -->
+          </div>
+
+          <!-- content form -->
+          <div class="all-content mt-3 px-4 pt-4 pb-2 position-relative">
+            <img src="./img/left-arrows.svg" alt="arrow collapse" class="collapse-arrow-form" data-toggle="collapse"
+              data-target="#collapse-form4" width="13px" height="13px" />
+            <div class="collapse" id="collapse-form4">
+              <div class="row text-center">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0 font-m-resposive">
+                  <div class="name-user pb-1 mb-3">
+                    <span class="medium color-black">نام و نام خانوادگی:</span>
+                    <span class="text-muted">علی محمدی</span>
+                  </div>
+
+                  <div class="cod-user pb-1 mb-3">
+                    <span class="medium color-black">نوع کود:</span>
+                    <span class="text-muted">کود آزمایشی</span>
+                  </div>
+
+                  <div class="code-user pb-1 mb-3">
+                    <span class="medium color-black">کد محصول:</span>
+                    <span class="text-muted bnazanin">1234567890</span>
+                  </div>
+
+                  <div class="price-user pb-1 mb-3">
+                    <span class="medium color-black">مبلغ کل:</span>
+                    <span class="text-muted bnazanin">‎‎3, 756, 235 <span class="small">تومان</span></span>
+                  </div>
+                  <!-- end user-options -->
+                </div>
+
+                <div class="col-6 col-sm-3">
+                  <div class="EC1-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="PT-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="FB-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="EC2-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                  <div class="EC3-box mb-3">
+                    <input type="checkbox" />
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-3 ltr">
+                  <div class="EC1-box mb-3">EC+</div>
+                  <div class="PT-box mb-3">PT+</div>
+                  <div class="FB-box mb-3">FB+</div>
+                  <div class="EC2-box mb-3">EC+</div>
+                  <div class="EC3-box mb-3">EC+</div>
+                  <!-- end select user -->
+                </div>
+
+                <!-- end row div -->
+              </div>
+            </div>
+            <!-- end content form -->
+          </div>
+
+          <!-- content all price and bank -->
+          <div class="container-fluid text-right mt-4">
+            <div class="row">
+              <!-- faktor div and code meli -->
+              <div
+                class="col-12 col-sm-7 col-lg-8 d-flex flex-column align-items-start mb-2 pb-1 pb-sm-0 mb-sm-0 items-center">
+                <div class="w-100 faktor-price d-flex align-items-start">
+                  <p class="medium title-yes-no font-105 color-black pt-0 ml-2 pl-1">
+                    1- آیا به فاکتور رسمی نیاز دارید؟
+                  </p>
+                  <img src="./img/yes-icon.svg" alt="yes icon ..." class="yes-faktor active-faktor ml-2" />
+                  <img src="./img/remove-icon.svg" alt="no icon ..." class="remove-faktor" />
+                </div>
+
+                <form class="w-100 d-flex align-items-center mt-2">
+                  <p class="font-95 title-meli pt-0 ml-2 pl-1">
+                    کدملی خود را وارد نمایید:
+                  </p>
+                  <input type="text" class="code-meli-inp" />
+                </form>
+
+                <div class="d-flex align-items-start mt-3">
+                  <p class="title-change light pt-0 ml-2 pl-1">
+                    با تمامی
+                    <a href="" data-toggle="modal" data-target="#centralModalInfo">
+                      شرایط و حقوق</a>
+                    این سایت موافقم:
+                  </p>
+                  <img src="./img/yes-icon.svg" alt="change icon ..." class="change-icon" />
+                </div>
+              </div>
+
+              <!-- bank fileds -->
+              <div class="col-12 col-sm-5 col-lg-4 mb-4 mb-md-0">
+                <p class="medium font-105 title-yes-no color-black pt-0 ml-2 pl-1">
+                  2- انتخاب درگاه پرداخت:
+                </p>
+                <img src="./img/Melat.svg" alt="bank2..." class="bank-icon" />
+                <img src="./img/Bank-2.svg" alt="bank3..." class="bank-icon bank-active" />
+                <img src="./img/Parsian.svg" alt="bank1..." class="bank-icon" />
+              </div>
+
+              <!-- <div class="col-12 col-sm-7 col-lg-8 d-flex align-items-start mt-4 mb-2 pb-1 pb-sm-0 mb-sm-0">
+                                    <p class="title-change light pt-0 ml-2 pl-1">با تمامی شرایط و حقوق این سایت موافقم:</p>
+                                    <img src="./img/yes-icon.svg" alt="change icon ..." class="change-icon">
+                                </div> -->
+
+              <!-- bank fileds -->
+              <div class="col-12 btns-responsive text-center mt-4">
+                <a href="./index2.html" class="btn btn-primary btn-sm text-center ml-1 px-3">مرحله قبلی</a>
+                <a href="./index3.html" class="btn btn-success btn-sm text-center ml-1 px-3">پرداخت صورتحساب</a>
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- end container fluid -->
+          </div>
+
+          <!-- end content-all-form -->
+        </div>
+        <!-- end content -->
+      </section>
+      <!-- end row -->
+    </div>
+    <!-- end container fluid -->
+  </div>
+
+  <!--modal info privecy-->
+
+  <!-- Central Modal Medium Info -->
+  <div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <p class="heading lead">شرایط و ضوابط</p>
+
+          <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="white-text">&times;</span>
+          </button>
+        </div>
+
+        <!--Body-->
+        <div class="modal-body">
+          <div class="text-center">
+            <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+            <p>
+              وب‌سایت آزمایشگاه تشخیص طبی و تخصصی آویسا طبق قوانین جرایم
+              رایانه‌ای متعهد می‌شود که اطلاعات کاربران را با تمام امکاناتی که
+              در اختیار دارد محافظت کند و به هیچ‌عنوان این اطلاعات را در
+              اختیار سازمان‌ها و مراکز دیگر به منظور تبلیغات یا خدمات دیگر
+              ارائه ندهد. همچنین ما این امکان را در اختیار کاربران قرار
+              داده‌ایم تا کاربران در صورت عضویت در سایت آزمایشگاه تشخیص طبی و
+              تخصصی آویسا بتوانند، اطلاعات خود را ویرایش کنند یا در صورت
+              درخواست برای حذف کاربری خود با ارسال درخواست به تیم پشتیبان این
+              امکان برای آنها فراهم گردد.
+            </p>
+          </div>
+        </div>
+
+        <!--Footer-->
+        <div class="modal-footer justify-content-center">
+          <button class="btn btn-danger" data-dismiss="modal">
+            رد درخواست , خروج
+          </button>
+          <button class="btn btn-success mr-2" data-dismiss="modal">
+            پذیرش قوانین
+          </button>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+</body>
+<script src="./library/BootStrap/jquery.min.js"></script>
+<script src="./library/BootStrap/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+
+<!-- JQuery -->
+
+</html>

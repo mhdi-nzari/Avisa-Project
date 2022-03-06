@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="29" viewBox="0 0 30 29">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_11_Pro_1">
+      <rect width="30" height="29"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_11_Pro_1" data-name="iPhone X, XS, 11 Pro – 1" clip-path="url(#clip-iPhone_X_XS_11_Pro_1)">
+    <path id="Icon_awesome-pencil-alt" data-name="Icon awesome-pencil-alt" d="M16.533,4.721,15,6.252a.4.4,0,0,1-.564,0L10.753,2.566a.4.4,0,0,1,0-.564L12.283.471a1.6,1.6,0,0,1,2.255,0l2,2A1.591,1.591,0,0,1,16.533,4.721Zm-7.1-1.4-8.72,8.72-.7,4.034a.8.8,0,0,0,.923.923l4.034-.707,8.72-8.72a.4.4,0,0,0,0-.564L10.005,3.317a.4.4,0,0,0-.568,0ZM4.122,11.289a.463.463,0,0,1,0-.657L9.235,5.518a.465.465,0,0,1,.657.657L4.779,11.289a.463.463,0,0,1-.657,0Zm-1.2,2.793H4.517v1.205l-2.142.375L1.342,14.629l.375-2.142H2.923Z" transform="translate(6.998 5.995)" fill="#2c7bcb"/>
+  </g>
+</svg>

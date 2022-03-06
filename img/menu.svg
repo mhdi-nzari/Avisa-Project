@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="49" viewBox="0 0 57 49">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_11_Pro_1">
+      <rect width="57" height="49"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_11_Pro_1" data-name="iPhone X, XS, 11 Pro – 1" clip-path="url(#clip-iPhone_X_XS_11_Pro_1)">
+    <path id="Icon_open-menu" data-name="Icon open-menu" d="M0,0V3.73H30V0ZM0,11.079v3.73H30v-3.73ZM0,22.27V26H30V22.27Z" transform="translate(13 13)" fill="#2c7bcb"/>
+  </g>
+</svg>

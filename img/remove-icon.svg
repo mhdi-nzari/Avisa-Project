@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-remove-icon">
+      <rect width="38" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="remove-icon" clip-path="url(#clip-remove-icon)">
+    <path id="Icon_ionic-md-close" data-name="Icon ionic-md-close" d="M37.828,10.554,34.8,7.523,22.676,19.646,10.554,7.523l-3.03,3.03L19.646,22.676,7.523,34.8l3.03,3.03L22.676,25.706,34.8,37.828l3.03-3.03L25.706,22.676Z" transform="translate(-3.523 -3.523)" fill="red"/>
+  </g>
+</svg>

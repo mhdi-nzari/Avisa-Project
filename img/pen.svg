@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="29" viewBox="0 0 30 29">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_11_Pro_1">
+      <rect width="30" height="29"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_11_Pro_1" data-name="iPhone X, XS, 11 Pro – 1" clip-path="url(#clip-iPhone_X_XS_11_Pro_1)">
+    <path id="Icon_awesome-pencil-ruler" data-name="Icon awesome-pencil-ruler" d="M5.02,11.191,11.191,5.02,9.168,3,6.34,5.826a.363.363,0,0,1-.514,0l-.514-.514a.363.363,0,0,1,0-.514L8.14,1.969,6.6.426a1.455,1.455,0,0,0-2.057,0L.426,4.54a1.455,1.455,0,0,0,0,2.057L5.02,11.191ZM22.835,5.835a2.2,2.2,0,0,0,0-3.115L20.76.645a2.2,2.2,0,0,0-3.116,0l-2.11,2.11,5.191,5.191ZM14.5,3.793.875,17.411l-.86,4.927a.974.974,0,0,0,1.128,1.126L6.07,22.6,19.687,8.984Zm8.559,13.09L21.511,15.34l-2.829,2.829a.363.363,0,0,1-.514,0l-.514-.514a.364.364,0,0,1,0-.514l2.829-2.829-2.024-2.024-6.172,6.171,4.6,4.6a1.455,1.455,0,0,0,2.057,0l4.114-4.114a1.455,1.455,0,0,0,0-2.057Z" transform="translate(3.5 2.501)" fill="#2c7bcb" stroke="#2c7bcb" stroke-width="1"/>
+  </g>
+</svg>

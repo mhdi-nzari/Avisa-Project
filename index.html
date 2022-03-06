@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پنل کاربری آزمایشگاه آویسا</title>
+    <link rel="stylesheet" href="./library/BootStrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./library/BootStrap/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./fonts/IRANSans4/font.css" />
+</head>
+
+<body>
+    <!-- header 1 -->
+    <header class="header-1 position-fixed d-flex align-items-center justify-content-between">
+        <!-- logo -->
+        <div class="logo-div pl-3 order-1">
+            <img src="./img/logo.png" alt="logo..." class="w-65 float-left">
+        </div>
+
+        <!-- right items -->
+        <div class="right-items pr-3 pb-1 d-flex align-items-center justify-content-between">
+            <img src="./img/menu.svg" alt="hamberger menu..." class="w-50 mw-50 menu-icon">
+
+            <div class="notification position-relative">
+                <img src="./img/notification.svg" alt="notification..." class="mw-76 w-76">
+                <div class="number position-absolute medium">3</div>
+                <div class="position-absolute noti-collapse collapse show text-justify" id="collapse1">
+                    <div class="noti-item border-noti">در اینجا متن نوتیفیکشن قرار خواهد گرفت.</div>
+                    <div class="noti-item border-noti">در اینجا متن نوتیفیکشن قرار خواهد گرفت.</div>
+                    <div class="noti-item">در اینجا متن نوتیفیکشن قرار خواهد گرفت.</div>
+                    <!-- end collapse div -->
+                </div>
+                <!-- end notification div -->
+            </div>
+        </div>
+        <!-- end header-1 -->
+    </header>
+
+    <!-- all content and sidebar -->
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <!-- sidebar profile -->
+            <section class="sidebar position-fixed col-12 col-sm-12 col-md-3 col-lg-2 h-100">
+                <div class="profile">
+                    <img src="./img/user.svg" alt="user profile..." class="user-profile">
+                    <p class="h6 color-black">علی محمدی</p>
+                    <div class="icons d-flex justify-content-center align-items-center">
+                        <div class="home-div">
+                            <img src="./img/home.svg" alt="home ..." class="home-icon">
+                        </div>
+                        <div class="exit-div">
+                            <img src="./img/exit.svg" title="خروج" alt="exit ..." class="exit-icon">
+                        </div>
+                    </div>
+                    <!-- end profile -->
+                </div>
+
+                <div class="options mt-4 mx-2">
+                    <div class="dashboard border-noti active" data-toggle="collapse" data-target="#collapse2">
+                        <div class="w-100 d-flex align-items-start justify-content-between">
+                            <div class="d-flex align-items-start w-100">
+                                <img src="./img/dashboard.svg" alt="dashboard icon..." class="icon-sidebar">
+                                <a href="./index.html" class="text-icon">داشبورد</a>
+                            </div>
+
+                            <img src="./img/left-arrow.png" alt="arrow..." class="arrow-icon">
+                        </div>
+
+                        <div id="collapse2" class="collapse mr-1">
+                            <div class="d-flex align-items-start">
+                                <img src="./img/user-setting.svg" alt="user setting..." class="user-setting-icon">
+                                <a href="./profile.html" class="text-icon-collapse">پروفایل کاربری</a>
+                            </div>
+                        </div>
+                        <!-- end dashboard -->
+                    </div>
+
+                    <div class="requests border-noti" data-toggle="collapse" data-target="#collapse3">
+                        <div class="w-100 d-flex align-items-start justify-content-between">
+                            <div class="d-flex align-items-start w-100">
+                                <img src="./img/send.svg" alt="dashboard icon..." class="icon-sidebar">
+                                <a class="text-icon">درخواست ها</a>
+                            </div>
+
+                            <img src="./img/left-arrows.svg" alt="arrow..." class="arrow-icon">
+                        </div>
+
+                        <div id="collapse3" class="collapse mr-1">
+                            <div class="d-flex align-items-start flex-column">
+                                <div class="w-100 d-flex align-items-start">
+                                    <img src="./img/arrow.svg" alt="arrow..." class="arrow-collapse">
+                                    <a href="./index2.html" class="text-icon-collapse page2">افزودن درخواست</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end dashboard -->
+                    </div>
+                    <!-- end options -->
+                </div>
+                <!-- end sidebar -->
+            </section>
+
+            <!-- content box -->
+            <section class="content col-12 col-sm-12 col-md-9 col-lg-10 mr-auto mt-4">
+                <!--<div class="card mb-3">-->
+                <!--    <div class="card-header d-flex align-items-center">-->
+                <!--        <img src="./img/pen.svg" alt="pen ruls ..." class="icon-card">-->
+                <!--        <p class="title-card bold color-black">اطلاعات شخصی</p>-->
+                <!--    </div>-->
+
+                <!--    <div class="card-body userDetails">-->
+                <!--        <div class="input-group ">-->
+                <!--            <div class="readonly border w-100 div-1">-->
+                <!--                <span class="text-1-div titleDetails">نام و نام خانوادگی </span>-->
+                <!--                <span class="text-2-div m-2">ابولفضل سوداگری</span>-->
+                <!--            </div>-->
+
+                <!--            <div class="readonly border w-100 div-2">-->
+                <!--                <span class="text-1-div titleDetails">پست الکترونیک </span>-->
+                <!--                <span class="text-2-div m-2">sowdagary@gmail.com</span>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--        <div class="input-group">-->
+                <!--            <div class="readonly border w-100 border-top-0 div-3">-->
+                <!--                <span class="text-1-div titleDetails">تلفن همراه</span>-->
+                <!--                <span class="text-2-div m-2 bnazanin">0937-2874-909</span>-->
+                <!--            </div>-->
+
+                <!--            <div class="readonly border w-100 border-top-0 div-4">-->
+                <!--                <span class="text-1-div titleDetails">کدملی </span>-->
+                <!--                <span class="text-2-div m-2 bnazanin" >1234567890</span>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!-- end card-1 -->
+                <!--</div>-->
+
+                <div class="card mb-3 mt-5">
+                    <div class="card-header d-flex align-items-center ">
+                        <img src="./img/message.svg" alt="pen ruls ..." class="icon-card">
+                        <p class="title-card bold color-black">آرشیو پیام ها</p>
+                    </div>
+
+                    <div class="card-body">
+                        <table class="table table1 table-bordered text-center">
+                            <thead class="border-bottom-0">
+                                <tr class="IRANSans">
+                                    <th>ردیف</th>
+                                    <th>کد آزمایش</th>
+                                    <th>تاریخ ارسال</th>
+                                    <th>اطلاعات</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="py-35 bnazanin">1</td>
+                                    <td class="py-35 bnazanin">871 - 934</td>
+                                    <td class="py-35 bnazanin">1397 / 05 / 06</td>
+                                    <td class="py-3">
+                                        <button class="btn btn-primary btn-sm text-center">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-35 bnazanin">2</td>
+                                    <td class="py-35 bnazanin">871 - 934</td>
+                                    <td class="py-35 bnazanin">1397 / 05 / 06</td>
+                                    <td class="py-3">
+                                        <button class="btn btn-primary btn-sm text-center">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="allContentItemMobile">
+                            <div class="w-100 d-flex mobileItem align-items-center justify-content-center">
+                                <div class="rowCounter font-weight-bolder align-items-center bnazanin">1</div>
+                                <div class="labDetails d-flex flex-column p-3">
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">کد آزمایش :
+                                        </label>
+                                        <span class="bnazanin align-content-end">871 - 934</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">تاریخ آزمایش :
+                                        </label>
+                                        <span class="bnazanin text-left">1397 / 05 / 06</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">اطلاعات :
+                                        </label>
+                                        <button class="btn btn-primary btn-sm text-center align-content-end">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-primary btn-sm text-center align-content-end">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex mobileItem align-items-center justify-content-center">
+                                <div class="rowCounter font-weight-bolder align-items-center bnazanin">2</div>
+                                <div class="labDetails d-flex flex-column p-3">
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">کد آزمایش :
+                                        </label>
+                                        <span class="bnazanin align-content-end">871 - 934</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">تاریخ آزمایش :
+                                        </label>
+                                        <span class="bnazanin text-left">1397 / 05 / 06</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">اطلاعات :
+                                        </label>
+                                        <button class="btn btn-primary btn-sm text-center align-content-end">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex mobileItem align-items-center justify-content-center">
+                                <div class="rowCounter font-weight-bolder align-items-center bnazanin">3</div>
+                                <div class="labDetails d-flex flex-column p-3">
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">کد آزمایش :
+                                        </label>
+                                        <span class="bnazanin align-content-end">871 - 934</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">تاریخ آزمایش :
+                                        </label>
+                                        <span class="bnazanin text-left">1397 / 05 / 06</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">اطلاعات :
+                                        </label>
+                                        <button class="btn btn-primary btn-sm text-center align-content-end">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex mobileItem align-items-center justify-content-center">
+                                <div class="rowCounter font-weight-bolder align-items-center bnazanin ">4</div>
+                                <div class="labDetails d-flex flex-column p-3">
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">کد آزمایش :
+                                        </label>
+                                        <span class="bnazanin align-content-end">871 - 934</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">تاریخ آزمایش :
+                                        </label>
+                                        <span class="bnazanin text-left">1397 / 05 / 06</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">اطلاعات :
+                                        </label>
+                                        <button class="btn btn-primary btn-sm text-center align-content-end">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex mobileItem align-items-center justify-content-center">
+                                <div class="rowCounter font-weight-bolder align-items-center bnazanin">5</div>
+                                <div class="labDetails d-flex flex-column p-3">
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">کد آزمایش :
+                                        </label>
+                                        <span class="bnazanin align-content-end">871 - 934</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">تاریخ آزمایش :
+                                        </label>
+                                        <span class="bnazanin text-left">1397 / 05 / 06</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">اطلاعات :
+                                        </label>
+                                        <button class="btn btn-primary btn-sm text-center align-content-end">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end card-1 -->
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="./img/send-2.svg" alt="send icon ..." class="icon-card">
+                        <p class="title-card bold color-black">درخواست</p>
+                    </div>
+
+                    <div class="card-body">
+                        <table class="table table-bordered text-center">
+                            <thead class="border-bottom-0">
+                                <tr class="IRANSans">
+                                    <th>ردیف</th>
+                                    <th>شناسه درخواست ها</th>
+                                    <th>تاریخ ثبت</th>
+                                    <th>وضعیت</th>
+                                    <th>اطلاعات</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="py-35 bnazanin">1</td>
+                                    <td class="py-35 bnazanin">871 - 934</td>
+                                    <td class="py-35 bnazanin">06 / 05 / 1397</td>
+                                    <td class="py-3">
+                                        <button class="btn btn-danger btn-sm text-center border-0">
+                                            <img src="./img/remove.svg" alt="remove icon ..."
+                                                class="icon-card-body remove-icon">
+                                            <span class="mr-2">تایید نشده</span>
+                                        </button>
+                                    </td>
+                                    <td class="py-3">
+                                        <button class="btn btn-primary btn-sm text-center">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="py-35 bnazanin">1</td>
+                                    <td class="py-35 bnazanin">871 - 934</td>
+                                    <td class="py-35 bnazanin">06 / 05 / 1397</td>
+                                    <td class="py-3">
+                                        <button class="btn btn-success btn-sm text-center border-0">
+                                            <img src="./img/success.svg" alt="success icon ..."
+                                                class="icon-card-body success-icon">
+                                            <span class="mr-2">موفقیت آمیز</span>
+                                        </button>
+                                    </td>
+                                    <td class="py-3">
+                                        <button class="btn btn-primary btn-sm text-center">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="allContentItemMobile">
+                            <div class="w-100 d-flex mobileItem align-items-center justify-content-center">
+                                <div class="rowCounter font-weight-bolder align-items-center bnazanin">1</div>
+                                <div class="labDetails d-flex flex-column p-3">
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">شناسه درخواست ها
+                                            : </label>
+                                        <span class="bnazanin align-content-end">871 - 934</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">تاریخ ثبت :
+                                        </label>
+                                        <span class="bnazanin text-left">1397 / 05 / 06</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">وضعیت : </label>
+                                        <button class="btn btn-danger btn-sm text-center border-0">
+                                            <img src="./img/remove.svg" alt="remove icon ..."
+                                                class="icon-card-body remove-icon">
+                                            <span class="mr-2">تایید نشده</span>
+                                        </button>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">وضعیت : </label>
+                                        <button class="btn btn-primary btn-sm text-center align-content-end">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex mobileItem align-items-center justify-content-center">
+                                <div class="rowCounter font-weight-bolder align-items-center bnazanin">2</div>
+                                <div class="labDetails d-flex flex-column p-3">
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">شناسه درخواست ها
+                                            : </label>
+                                        <span class="bnazanin align-content-end">871 - 934</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">تاریخ ثبت :
+                                        </label>
+                                        <span class="bnazanin text-left">1397 / 05 / 06</span>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">وضعیت : </label>
+                                        <button class="btn btn-danger btn-sm text-center border-0">
+                                            <img src="./img/remove.svg" alt="remove icon ..."
+                                                class="icon-card-body remove-icon">
+                                            <span class="mr-2">تایید نشده</span>
+                                        </button>
+                                    </div>
+                                    <div class="w-100 border-bottom justify-content-start">
+                                        <label class="font-weight-bolder mx-4 my-2 font-weight-bolder">وضعیت : </label>
+                                        <button class="btn btn-primary btn-sm text-center align-content-end">
+                                            <img src="./img/info.svg" alt="info..." class="icon-card-body">
+                                            <span class="mr-2">جزئیات</span>
+                                        </button>
+                                        <button class="btn btn-info btn-sm text-center">
+                                            <img src="./img/download.png" alt="info...">
+                                            <span class="mr-2">دانلود</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card-1 -->
+                </div>
+
+                <!-- footer -->
+                <footer class="footer text-primary">
+                    طراحی و توسعه توسط تیم پردازش هوشمند همه حقوق محفوظ است.
+                </footer>
+                <!-- end content -->
+            </section>
+            <!-- end row -->
+        </div>
+        <!-- end container fluid -->
+    </div>
+    <!-- <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+      </p> -->
+
+    <script src="./library/BootStrap/jquery.min.js"></script>
+    <script src="./library/BootStrap/popper.min.js"></script>
+    <script src="./library/BootStrap/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="40" viewBox="0 0 36 40">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_11_Pro_1">
+      <rect width="36" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_11_Pro_1" data-name="iPhone X, XS, 11 Pro – 1" clip-path="url(#clip-iPhone_X_XS_11_Pro_1)">
+    <path id="aelrt-ico" d="M14,33.5a4.1,4.1,0,0,0,4-4.188H10A4.1,4.1,0,0,0,14,33.5Zm13.462-9.8c-1.207-1.358-3.467-3.4-3.467-10.1A10.221,10.221,0,0,0,16,3.457V2.094a2,2,0,1,0-4,0V3.457A10.221,10.221,0,0,0,4,13.609C4,20.3,1.746,22.346.538,23.7A2.1,2.1,0,0,0,0,25.125a2.051,2.051,0,0,0,2.006,2.094H25.994A2.051,2.051,0,0,0,28,25.125,2.1,2.1,0,0,0,27.462,23.7Z" transform="translate(4 3)" fill="#2c7bcb"/>
+  </g>
+</svg>

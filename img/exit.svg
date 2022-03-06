@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_11_Pro_1">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_11_Pro_1" data-name="iPhone X, XS, 11 Pro – 1" clip-path="url(#clip-iPhone_X_XS_11_Pro_1)">
+    <path id="آیکون_خروج" data-name="آیکون خروج" d="M21.61,2.9A13.314,13.314,0,1,1,6.136,2.91a1.293,1.293,0,0,1,1.879.413l.848,1.509A1.288,1.288,0,0,1,8.509,6.5a9.02,9.02,0,1,0,10.733-.005,1.281,1.281,0,0,1-.349-1.659l.848-1.509A1.287,1.287,0,0,1,21.61,2.9Zm-5.584,11.27V1.289A1.286,1.286,0,0,0,14.737,0H13.019a1.286,1.286,0,0,0-1.289,1.289V14.175a1.286,1.286,0,0,0,1.289,1.289h1.718A1.286,1.286,0,0,0,16.026,14.175Z" transform="translate(2.438 2)" fill="#2c7bcb"/>
+  </g>
+</svg>

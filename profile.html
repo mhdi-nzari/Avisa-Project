@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پنل کاربری</title>
+    <link rel="stylesheet" href="./library/BootStrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./library/BootStrap/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./fonts/IRANSans4/font.css" />
+    <link type="text/css" rel="stylesheet" href="css/persianDatepicker.css" />
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/persianDatepicker.min.js"></script>
+</head>
+
+<body>
+    <!-- header 1 -->
+    <header class="header-1 position-fixed d-flex align-items-center justify-content-between">
+        <!-- logo -->
+        <div class="logo-div pl-3 order-1">
+            <img src="./img/logo.png" alt="logo..." class="w-65 float-left">
+        </div>
+
+        <!-- right items -->
+        <div class="right-items pr-3 pb-1 d-flex align-items-center justify-content-between">
+            <img src="./img/menu.svg" alt="hamberger menu..." class="w-50 mw-50 menu-icon">
+
+            <div class="notification position-relative">
+                <img src="./img/notification.svg" alt="notification..." class="mw-76 w-76">
+                <div class="number position-absolute medium">3</div>
+                <div class="position-absolute noti-collapse collapse show text-justify" id="collapse1">
+                    <div class="noti-item border-noti">در اینجا متن نوتیفیکشن قرار خواهد گرفت.</div>
+                    <div class="noti-item border-noti">در اینجا متن نوتیفیکشن قرار خواهد گرفت.</div>
+                    <div class="noti-item">در اینجا متن نوتیفیکشن قرار خواهد گرفت.</div>
+                    <!-- end collapse div -->
+                </div>
+                <!-- end notification div -->
+            </div>
+        </div>
+        <!-- end header-1 -->
+    </header>
+
+    <!-- all content and sidebar -->
+    <div class="container-fluid mb-5">
+        <div id="proDesign" class="row">
+            <!-- sidebar profile -->
+            <section id="sidebar" class="sidebar position-fixed col-12 col-sm-12 col-md-3 col-lg-2 h-100">
+                <div class="profile">
+                    <img src="./img/user.svg" alt="user profile..." class="user-profile">
+                    <p class="h6 color-black">علی محمدی</p>
+                    <div class="icons d-flex justify-content-center align-items-center">
+                        <div class="home-div">
+                            <img src="./img/home.svg" alt="home ..." class="home-icon">
+                        </div>
+                        <div class="exit-div">
+                            <img src="./img/exit.svg" title="خروج" alt="exit ..." class="exit-icon">
+                        </div>
+                    </div>
+                    <!-- end profile -->
+                </div>
+
+                <div class="options mt-4 mx-2">
+                    <div class="dashboard border-noti active" data-toggle="collapse" data-target="#collapse2">
+                        <div class="w-100 d-flex align-items-start justify-content-between">
+                            <div class="d-flex align-items-start w-100">
+                                <img src="./img/dashboard.svg" alt="dashboard icon..." class="icon-sidebar">
+                                <a href="./index.html" class="text-icon">داشبورد</a>
+                            </div>
+
+                            <img src="./img/left-arrows.svg" alt="arrow..." class="arrow-icon">
+                        </div>
+
+                        <div id="collapse2" class="collapse mr-1">
+                            <div class="d-flex align-items-start">
+                                <img src="./img/user-setting.svg" alt="user setting..." class="user-setting-icon">
+                                <a href="./profile.html" class="text-icon-collapse">پروفایل کاربری</a>
+
+                            </div>
+                        </div>
+                        <!-- end dashboard -->
+                    </div>
+
+                    <div class="requests border-noti" data-toggle="collapse" data-target="#collapse3">
+                        <div class="w-100 d-flex align-items-start justify-content-between">
+                            <div class="d-flex align-items-start w-100">
+                                <img src="./img/send.svg" alt="dashboard icon..." class="icon-sidebar">
+                                <a class="text-icon">درخواست ها</a>
+                            </div>
+
+                            <img src="./img/left-arrows.svg" alt="arrow..." class="arrow-icon">
+                        </div>
+
+                        <div id="collapse3" class="collapse mr-1">
+                            <div class="d-flex align-items-start flex-column">
+                                <div class="w-100 d-flex align-items-start">
+                                    <img src="./img/arrow.svg" alt="arrow..." class="arrow-collapse">
+                                    <a href="./index2.html" class="text-icon-collapse page2">افزودن درخواست</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end dashboard -->
+                    </div>
+                    <!-- end options -->
+                </div>
+                <!-- end sidebar -->
+            </section>
+
+            <!-- content box -->
+            <section class="content col-12 col-sm-12 col-md-9 col-lg-10 mr-auto mt-4">
+                <div class="card mb-3 mt-5">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="./img/icons8.png" alt="pen ruls ..." class="icon-card">
+                        <p class="title-card bold color-black">نمایه من</p>
+                    </div>
+
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="profileBody col-12 col-sm-12 col-md-3 d-sm-flex  justify-content-sm-center  ">
+                                <!--right content profile-->
+
+                                <div class="profile-1  justify-content-center ">
+                                    <p class="text-center bold ">تغییر تصویر پروفایل</p>
+                                    <img src="./img/user.svg" alt="" class=" hover1 m-3">
+                                    <label
+                                        class="btn btn-outline-success mt-3 text-center form-control align-items-center justify-content-center">
+                                        انتخاب شود <input type="file" hidden>
+                                    </label>
+                                </div>
+                                <div class="line-1 right d-sm-none d-md-block"></div>
+                            </div>
+                            <!-- end right content profile-->
+
+                            <div class="col-12 col-sm-12 editFormProfile col-md-9 mr-auto  mt-1 ">
+
+                                <form class="align-items-start">
+
+
+                                    <div class="form-group row mt-4">
+                                        <label for="input11" class="col-sm-3 bold col-md-2 ">نام شرکت : </label>
+
+                                        <div class="col-sm-9 col-md-10 pt-2">
+                                            <label class="radio-inline mr-2 ml-5" dir="ltr"><input class="m-2"
+                                                    type="radio" id="input5" name="radio-10" checked>حقیقی </label>
+                                            <label class="radio-inline" dir="ltr"><input class="m-2" type="radio"
+                                                    id="input11" name="radio-10">حقوقی</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label for="input1" class="col-sm-3 bold col-md-2   ">نام کاربری : </label>
+                                        <div class="col-sm-9 col-md-10">
+                                            <input type="text" class="form-control" id="input1" readonly
+                                                placeholder="Mahdi_nazari">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="input1" class="col-sm-3 bold col-md-2   ">نام شرکت : </label>
+                                        <div class="col-sm-9 col-md-10">
+                                            <input type="text" class="form-control" readonly
+                                                placeholder="زرین مهر اریا">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="input7" class="col-sm-3 bold col-md-2"> کدملی : </label>
+                                        <div class="col-sm-9 col-md-10">
+                                            <input type="number" class="form-control" id="input7"
+                                                placeholder="125-061572-6" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="input7" class="col-sm-3 bold col-md-2"> کدملی شرکت : </label>
+                                        <div class="col-sm-9 col-md-10">
+                                            <input type="number" class="form-control" placeholder="125-061572-6"
+                                                readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="input2" class="col-sm-3 bold col-md-2">ایمیل : </label>
+                                        <div class="col-sm-9 col-md-10">
+                                            <input type="email" class="form-control" id="input2"
+                                                placeholder="pardazeh@yahoo.com" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="input3" class="col-sm-3 bold col-md-2">نام : </label>
+                                        <div class="col-sm-9 col-md-10">
+                                            <input type="text" class="form-control" id="input3" placeholder="مهدی "
+                                                readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="input4" class="col-sm-3 bold col-md-2"> نام خانوادگی : </label>
+                                        <div class="col-sm-9 col-md-10">
+                                            <input type="text" class="form-control" id="input4" placeholder="نظری"
+                                                readonly>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row mt-4">
+                                        <label for="input5" class="col-sm-3 bold col-md-2">جنسیت : </label>
+
+                                        <div class="col-sm-9 col-md-10 pt-2">
+                                            <label class="radio-inline mr-2 ml-5" dir="ltr">
+                                                <input class="m-2" type="radio" name="radio-1" checked>مرد</label>
+                                            <label class="radio-inline" dir="ltr"><input class="m-2" type="radio"
+                                                    name="radio-1">زن</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="input6" class="col-sm-3 bold col-md-2 mt-2">شماره تماس : </label>
+                                        <div class="col-sm-9 col-md-10 ">
+                                            <input type="text" class="form-control" id="input6"
+                                                placeholder=" xxx - 0913" readonly>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-12 d-flex  justify-content-center pl-md-0">
+                                        <!-- <button class="editProfileBtn btn btn-outline-danger text-center  d-block d-md-block d-sm-none  m-2 "> ویرایش مشخصات</button> -->
+                                        <button class="btn btn-outline-success text-center m-2  "> ویرایش
+                                            مشخصات</button>
+                                    </div>
+
+
+
+
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- end card-1 -->
+                </div>
+
+                <!-- footer -->
+                <footer class="footer text-primary">
+                    طراحی و توسعه توسط تیم پردازش هوشمند
+                </footer>
+                <!-- end content -->
+            </section>
+            <!-- end row -->
+        </div>
+        <!-- end container fluid -->
+    </div>
+    <script src="./profile.js"></script>
+    <script src="./library/BootStrap/jquery.min.js"></script>
+    <script src="./library/BootStrap/popper.min.js"></script>
+    <script src="./library/BootStrap/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
